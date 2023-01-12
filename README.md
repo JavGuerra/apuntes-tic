@@ -1,4 +1,4 @@
-# Apuntres DAW
+# Apuntes DAW
 por Javier Guerra
 
 - JAVA
