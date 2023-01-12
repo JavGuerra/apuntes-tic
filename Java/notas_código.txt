@@ -1,0 +1,111 @@
+// Salir
+System.exit(0);
+
+//Entrada-salida consola
+try{
+InputStreamReader isr = new InputStreamReader(System.in);
+BufferedReader br = new BufferedReader(isr);
+System.out.print("Introduce el texto: ");
+String cad = br.readLine();
+//salida por pantalla del texto introducido
+System.out.println(cad);
+System.out.print("Introduce un numero: ");
+int num = Integer.parseInt(br.readLine());
+// salida por pantalla del numero introducido
+System.out.println(num);
+} catch (Exception e) {
+// System.out.println("Error al leer datos");
+e.printStackTrace();
+}
+
+// Scanner
+// Creamos objeto teclado
+Scanner teclado = new Scanner(System.in);
+// Declaramos variables a utilizar
+String nombre;
+int edad;
+boolean estudias;
+float salario;
+// Entrada de datos
+System.out.println("Nombre: ");
+nombre=teclado.nextLine();
+System.out.println("Edad: ");
+edad=teclado.nextInt();
+System.out.println("Estudias: ");
+estudias=teclado.nextBoolean();
+System.out.println("Salario: ");
+salario=teclado.nextFloat();
+// Salida de datos
+System.out.println("Bienvenido: " + nombre);
+System.out.println("Tienes: " + edad +" años");
+System.out.println("Estudias: " + estudias);
+System.out.println("Tu salario es: " + salario +" euros");
+
+//Número es múltiplo del segundo
+System.out.println("El número " + x + (x % y == 0 ? " sí" : " no") + " es múltiplo de " + y + ".");
+
+
+// Excepciones con throw newpara definir mensaje de salida
+En el método
+public int listar(int x, int t, int l, String s) throws Exception { // throws
+luego: 
+        // Controla variables de entrada
+        if ((x < 1) || (t < 1))
+            throw new Exception("debe ser mayor que 0.");
+        if (x > t)
+            throw new Exception("número mayor que " + t + "."); // throw new 'Exception' ... o mi tipo de excepción
+
+En el código que hace la llamada
+        } catch (Exception e) {
+            System.err.println(" *** Error: " + e.getMessage());  // imprime el mensaje elegido.
+        }
+
+// Si dato correcto, sino error, y repetir
+            do { op = pide.enteroPos("Elegir opción: ");
+                if ((op >= 1) && (op <= 5)) break;
+                System.err.println(" *** Error: opciones del 1 al 5.");
+            } while (true);
+
+
+// leer un carácter por teclado
+c = (char) System.in.read();
+
+// leer y escribir bytes
+InputStream fentrada = new FileInputStream(origen);
+OutputStream fsalida = new FileOutputStream(destino);
+byte[] buffer= new byte[256];
+n = fentrada.read(buffer); // leer
+fsalida.write(buffer, 0, n); // escribir
+
+// leer y escribir caracteres
+PrintWriter out = new PrintWriter(new FileWriter("c:\\salida.txt", true));
+// BufferedReader e ImputStreamReader aquí hacen de puente entre Stream y caracteres. Entra stream, sale caracteres.
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in))
+      while (!(s = br.readLine()).equals("salir")){
+              out.println(s);
+      }
+// FileReader para leer
+
+
+// Ventanas:
+class MiVentana extrend JFrame
+
+MiVentana() {
+super("titulo");
+this.setLayout(new FlowLayout()); // los objetos swing se colocan unso detrás de otros.
+this.definirVentana();
+this.setResizable(false); // no se puede cambiar el tamaño
+this.setLocationRelativeTo(null); // centrado
+this.setSize(400,300);
+this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // cierra el programa con la X.
+this.setVisible(true);
+this.linea.requestFocusInWindow(); // donde línea es el cuadro de texto. Debe usarse despues de setVisible        // Selecciona el aspecto de swing según el S.O.
+        try {
+            UIManager.setLookAndFeel(
+                    UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+        }
+//icono de la aplicación
+        this.setIconImage(new ImageIcon(getClass().getResource(
+                "/prog08_ejer01/recursos/xml-icon.png")).getImage());
+}

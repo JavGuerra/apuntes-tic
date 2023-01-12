@@ -1,0 +1,34 @@
+La clase date ya no es utilizada, fue sustituida por la clase Calendar. Para obtener la fecha actual, bastará con hacer lo siguiente:
+
+imort java.util.*; //Para evitarte problemas con los import
+
+Creas una variable de tipo Calendar, la inicializas con un GregorianCalendar
+
+Calendar calendario = new GregorianCalendar();
+
+El GregorianCalendar llenará tu objeto Calendar con la fecha del sistema actual, la cual podrás obtener de la siguiente manera:
+
+int mes = calendario.get(calendario.MONTH);
+
+La constante MONTH es para obtener el mes, DAY_OF_MONTH para obtener el número de día del mes y YEAR para obtener el año. Si quisieras tener una fecha en el formato de un String, harías lo siguiente:
+
+
+String fecha;
+Calendar a = new GregorianCalendar();
+fecha = Integer.toString(a.get(a.YEAR));
+fecha +="-"
++Integer.toString(a.get(a.MONTH) + 1);
+fecha +="-"+
+Integer.toString(a.get(a.DAY_OF_MONTH)...
+
+Y con eso tendrías la fecha en cadena. Para saber el número de días que una persona ha vivido, bastará con hacer un poco de manejo de números y años una vez obtenida la fecha actual y que el usuario haya introducido su fecha de nacimiento. Recuerda los años bisiestos.
+
+Por cierto, si quisieras llenar un objeto del tipo Calendar con los datos que te dé el usuario, bastará con crearlo, inicializarlo como si fuera un GregorianCalendar (si lo intentas inicializar como simple Calendar te marcará error, porque me parece que Calendar es interfaz), y una vez creado tu objeto, usar el método set, el que te puede servir lleva como parámetros un entero para año, mes y día, así:
+
+Calendar c = new GregorianCalendar();
+c.set(2007,6,10);
+
+Recuerda que los meses se comienzan a contar desde cero, por lo que:
+
+enero - 0
+febrero - 1, etc... Ahora sí, espero que te sirva 
