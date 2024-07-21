@@ -1,6 +1,6 @@
 La clase date ya no es utilizada, fue sustituida por la clase Calendar. Para obtener la fecha actual, bastará con hacer lo siguiente:
 
-imort java.util.*; //Para evitarte problemas con los import
+import java.util.*; //Para evitarte problemas con los import
 
 Creas una variable de tipo Calendar, la inicializas con un GregorianCalendar
 

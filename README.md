@@ -1,6 +1,10 @@
-# Apuntes DAW
+# Apuntes TIC
 por Javier Guerra
 
-- JAVA
-- PHP
+Incluyo en este repositorio mis apuntes sobre mis materias de estudio tanto de DAW como autodidactas. También incluyo materiales realizados para formaciones impartidas.
+
+- Programación
+    - JAVA
+    - PHP
 - BBDD
+    - relacional
