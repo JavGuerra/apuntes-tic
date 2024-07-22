@@ -36,3 +36,8 @@ Incluyo en este repositorio mis apuntes sobre mis materias de estudio tanto de *
     - [IDE](Programación/varios/ide.odt)
     - [Datos estructurados](Programación/varios/datos_estructurados.odt)
     - [XML y DTD](Programación/varios/XML_DTD.odt)
+
+## Enlaces
+
+- [Temario DAW](https://github.com/statickidz/TemarioDAW)
+- [Temario DAM](https://github.com/statickidz/TemarioDAM)
